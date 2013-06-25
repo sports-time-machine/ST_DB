@@ -1,0 +1,29 @@
+■ Ruby実行環境の用意（最初に1回）
+	http://rubyinstaller.org/downloads/
+		Ruby 1.9.3-p392 （1.9系で最新のもの）をダウンロード
+		以下のオプションをつけてインストール
+			■Rubyの実行ファイルへ環境変数PATHを設定する
+			■.rb .rbwファイルをRubyに関連付ける
+		
+	コマンドプロンプトから gem install activerecord roo を実行。必要なモジュールがインストールされる
+
+
+■ テーブル設計書を編集
+	db.xlsxを編集
+
+
+■ SQLの生成
+	excel2sql.rb をダブルクリック
+		または コマンドプロンプトでディレクトリに移動して ruby excel2sql.rb
+
+	
+	全テーブル作成用のSQL
+		generate\all.sql
+	
+	個別テーブル作成用のSQL
+		generate\シート名\テーブル名.sql
+	
+	CakePHPのバリデーション用ファイル
+		generate\CakePHP_config\validate\テーブル名.php
+
+	が生成されます
