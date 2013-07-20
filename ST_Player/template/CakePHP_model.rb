@@ -7,7 +7,6 @@ class <%= $ModelName %> extends AppModel
 	public $useTable = '<%= $basename %>';
 	public $primaryKey = '<%= $primaryKey %>';
 	
-	// app_model.phpでconfig/column_list/<%= $ModelName %>.php, config/validate/<%= $ModelName %>.phpを読み込み
-	public $column_list = array();
+	// app_model.phpでconfig/validate/<%= $ModelName %>.phpを読み込み
 	public $validate = array();
 }
